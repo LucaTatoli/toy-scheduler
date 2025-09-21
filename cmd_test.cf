@@ -1,0 +1,5 @@
+SET 0 10
+SET 1 12
+ADD $0 $1 $1
+WRITE "Il valore del registro A: $0\n"
+WRITE "Il valore del registro B: $1\n"

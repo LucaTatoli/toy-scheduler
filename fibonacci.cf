@@ -1,0 +1,16 @@
+WRITE "This program calculates Fibonacci until it reaches at least value 100\n"
+WRITE "1\n"
+WRITE "1\n"
+# inizializzo i registri 0 e 1 al valore 1
+SET 0 1
+SET 1 1
+# setto il registro 2 al valore del registro 0 come valore temporaneo
+SET 2 $0
+# calcolo il nuovo valore della serie di fibonacci e lo salvo nel registro 0
+ADD $0 $1 $0
+# setto il registro 1 al valore del vecchio registro 0 salvato nel registro 2 precedentemente
+SET 1 $2
+WRITE "$0\n"
+# eseguo un'istruzione di jump alla riga 7 se l'ultimo valore calcolato risulta maggiore di 100
+JUMP 6 $0 100
+WRITE "Fibonacci calculated until value $0\n"

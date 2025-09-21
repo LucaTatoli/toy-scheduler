@@ -1,0 +1,14 @@
+READ
+SET 0 10
+SET 1 11
+SET 2 -1
+ADD $2 1 $2
+WRITE "Value of reg 3 is $2\n"
+WRITE "Hello World!\n"
+ADD $0 1 $0
+ADD $1 -2 $1
+JUMP 5 $2 1
+WRITE "Hello again World!\n"
+WRITE "Goodbye World!\n"
+WRITE "SUM OF 10 AND 1 EQUALS $0\n"
+WRITE "SUM OF 11 AND -2 EQUALS $1\n"
