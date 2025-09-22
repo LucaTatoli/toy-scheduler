@@ -12,7 +12,7 @@ The process is a structure which holds this data:
 I made a mini scripting language, assembly like, that is used by the processes. The language features this operations:
  - SET (saves a value into a register)
  - WRITE (outputs to the terminal)
- - ADD (add sto values)
+ - ADD (adds two values)
  - JUMP (jumps to a specific line of code based on a condition)
  - READ (reads input from the user {to do})
 
